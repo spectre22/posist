@@ -1,0 +1,73 @@
+class Node{
+Date timestamp;
+String data;
+int nodeNumber;
+String nodeId;
+String referenceNodeId;
+String childReferenceNodeId;
+String genesisReferenceNodeId;
+HashSet HashValue;
+
+Node left, right;
+  
+    public Node(Date x,int b,String c,String d,String e,String f,HashSet g ) 
+    {
+
+        timestamp = x;
+       
+nodeNumber=b;
+nodeId=c;
+referenceNodeId=d;
+childreferenceNodeId=e;
+genesisReferenceNodeId=f;
+left = right = null;
+
+    }
+public data{
+int id;
+float value;
+String name;
+}
+}
+class tree{
+Node root;
+}
+public static void main(String[] args){
+Scanner in=new Scanner(System.in);
+
+do{
+System.out.println("Enter the Date ");
+
+String date = in.next();
+
+SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
+Date date2=null;
+try {
+  
+    date2 = dateFormat.parse(date);
+} catch (ParseException e) {
+    
+    e.printStackTrace();
+}
+int i;
+System.out.println("Enter value of node");
+int number=sc.nextInt();
+
+System.out.println("Enter reference id");
+String r=in.next();
+
+System.out.println("Enter genesis reference id ");
+
+String g=in.next();
+System.out.println("Enter the value for hashed data");
+
+int id=in.nextInt();
+HashSet<data>z=new HashSet<>();
+data d=new data(id,value,name);
+z.add(d);
+
+System.out.println("Enter  n/0 to exit n/1 to continue");
+n=in.nextInt();
+i++;
+}while(n!=0)
+}
